@@ -49,17 +49,6 @@ proc freq data = test_03;
 	/ missing nocol norow nocum nopct format=comma15.;
 run;
 
-data test_04;
-set
-	test_01
-	test_02;
-run;
-
-proc datasets lib = work nolist;
-	delete
-		test_04
-; quit;
-
 /*******/
 /*endProgram
 /*******/
