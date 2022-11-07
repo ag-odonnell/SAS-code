@@ -1,4 +1,3 @@
-
 /*******/
 /* Note: mvar input that will be manipulated
 /*******/
@@ -86,3 +85,49 @@ run;
 
 %mend create_mvar_list;
 %create_mvar_list;
+
+/*******/
+/* Note: add single quotes around mvar elements
+/*******/
+
+%macro add_single_quotes_mvar_list;
+	%let char_mvar_up1 =;
+
+	%macro loop_mvar_list(mvar_list_in=, mvar_list_out=);
+		%let num_elements = %sysfunc(countw(&mvar_list_in));
+		%put ****num_elements: &num_elements.****;
+		%do i = 1 %to &num_elements.;
+			%let &mvar_list_out. = &&&mvar_list_out. %str(%')%scan(&mvar_list_in, &i)%str(%');
+		%end;
+	%mend loop_mvar_list;
+	%loop_mvar_list(mvar_list_in=&char_mvar.,mvar_list_out=char_mvar_up1);
+
+
+	%put ****char_mvar_up1: &char_mvar_up1.****;
+%mend add_single_quotes_mvar_list;
+%add_single_quotes_mvar_list;
+
+/*******/
+/* Note: add prefix to mvar elements
+/*******/
+
+%macro add_prefix_mvar_list;
+	%let char_mvar_up1 =;
+
+	%macro loop_mvar_list(mvar_list_in=, mvar_list_out=,pre_val=);
+		%let num_elements = %sysfunc(countw(&mvar_list_in));
+		%put ****num_elements: &num_elements.****;
+		%do i = 1 %to &num_elements.;
+			%let &mvar_list_out. = &&&mvar_list_out. %str(&pre_val.)%scan(&mvar_list_in, &i);
+		%end;
+	%mend loop_mvar_list;
+	%loop_mvar_list(mvar_list_in=&char_mvar.,mvar_list_out=char_mvar_up1,pre_val=e_);
+
+
+	%put ****char_mvar_up1: &char_mvar_up1.****;
+%mend add_prefix_mvar_list;
+%add_prefix_mvar_list;
+
+/*******/
+/*endProgram
+/*******/
