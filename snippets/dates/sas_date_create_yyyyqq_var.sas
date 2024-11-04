@@ -7,5 +7,7 @@ data test_01;
     /**Convert the year to a Character Variable */
     yearChar=put(year(date_01),4.);
     /**Create a character version of the yyyyqq of date_01 */
-    NCH_DAILY_PROC_QTR=strip(compress(cat(put(year(date_01),4.),put(qtr(date_01),2.))));
+    date_01_QTR=strip(compress(cat(put(year(date_01),4.),put(qtr(date_01),2.))));
+    /**year and quarter functions should skip null values */
+    if date_01~=. then do; date_01_QTR=strip(compress(cat(put(year(date_01),4.),put(qtr(date_01),2.)))); end;
 run;
