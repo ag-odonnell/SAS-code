@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="SAS" ext="sas SAS" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="yes" Keywords4="yes" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">03/* 04*/ 00 01 02</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">&apos; - ! &quot; &amp; ( ) , . : ; ? @ [ \ ] ^ ` { | } ~ +</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open">data sql</Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close">run quit</Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">append bmdp calendar catalog chart cimport compare connect connection contents convert copy corr cport datasets format forms freq glm gplot logistic means npar1way options oracle pds plot pmenu preserve_comments proc print printto rank release sort source spell sql standard summary tabulate tapecopy tapelabel timeplot transpose ttest univariate v5tov6</Keywords>
+            <Keywords name="Keywords2">$include _all_ _character_ _cmd_ _error_ _freq_ _i_ _infile_ _last_ _msg_ _n_ _null_ _numeric_ _temporary_ _type_ abort abs addr adjrsq airy alpha alter altlog altprint arcos array arsin as atan attrc attrib attrn authserver autoexec awscontrol awsdef awsmenu awsmenumerge awstitle backward band base betainv blocksize blshift bnot bor brshift bufno bufsize bxor by byerr byline byte call cards cards4 case catcache cbufno cdf ceil center cexist change chisq cinv class cleanup close count cnonct cntllev codegen col collate collin column comamid comaux1 comaux2 comdef compbl compound compress config continue cos cosh cpuid create crosstab css curobs cv daccdb daccdbsl daccsl daccsyd dacctab dairy datalines datalines4 date datejul datepart datetime day dbcslang dbcstype dclose ddm delete delimiter depdb depdbsl depsl depsyd deptab dequote desc descending descript design= device dflang dhms dif digamma dim dinfo display distinct dkricond dkrocond dlm dnum do dopen doptname doptnum dread drop dropnote dsname dsnferr echo else emaildlg emailid emailpw emailserver emailsys encrypt end endsas engine eof eov erf erfc error errorcheck errors exist exp extract fappend fclose fcol fdelete feedback fetch fetchobs fexist fget file fileclose fileexist filefmt filename fileref filevar finfo finv fipname fipnamel fipstate first first. firstobs floor fmterr fmtsearch fnonct fnote font fontalias footnote footnote1 footnote2 footnote3 footnote4 footnote5 footnote6 footnote7 footnote8 footnote9 fopen foptname foptnum force formatted formchar formdelim formdlim forward fpoint fpos fput fread frewind frlen from fsep fuzz fwrite gaminv gamma getoption getvarc getvarn go goto group gwindow having hbar hbound helpenv helploc hms honorappearance hosthelp hostprint hour hpct html hvar ibessel ibr id if index indexc indexw infile informat initcmd initstmt input inputc inputn inr int intck intnx into intrr invaliddata irr is jbessel join juldate keep kentb kurtosis label lag last last. lbound leave left length levels lgamma lib libname library libref line linesize link list log log10 log2 logpdf logpmf logsdf lostcard lowcase lrecl ls macro macrogen maps mautosource max maxdec maxr mean measures median memtype merge merror min minute missing missover mlogic mod mode model modify month mopen mort mprint mrecall msglevel msymtabmax mvarsize myy n nest netpv new news nmiss no nobatch nobs nocaps nocardimage nocenter nocharcode nocmdmac nocol nocum nodate nodbcs nodetails nodmr nodms nodmsbatch nodup nodupkey noduplicates noechoauto noequals noerrorabend noexitwindows nofullstimer noicon noimplmac noint nolist noloadlist nomiss nomlogic nomprint nomrecall nomsgcase nomstored nomultenvappl nonotes nonumber noobs noovp nopad noprint noprintinit normal norow norsasuser nosetinit nosource2 nosplash nosymbolgen note notes notitle notitles notsorted noverbose noxsync noxwait npv number numkeys nummousekeys nway obs ods open option order ordinal otherwise out outp= output over ovp pad pad2 page pageno pagesize paired parm parmcards path pathdll pathname pdf peek peekc pfkey pmf point poisson poke position printer probbeta probbnml probchi probf probgam probhypr probit probnegb probnorm probsig probt procleave prt ps put putc putn pw pwreq qtr quit quote r ranbin rancau ranexp rangam range ranks rannor ranpoi rantbl rantri ranuni read recfm reg register regr remote remove rename repeat replace resolve retain return reuse reverse rewind right round rsquare rtf rtrace rtraceloc s s2 samploc sasautos sascontrol sasfrscr sashelp sasmsg sasmstore sasscript sasuser saving scan sdf second select selection separated seq serror set setcomm setot sign simple sin sinh siteinfo skewness skip sle sls sortedby sortpgm sortseq sortsize soundex source2 spedis splashlocation split spool sqrt start std stderr stdin stfips stimer stname stnamel stop stopover subgroup subpopn substr sum sumwgt symbol symbolgen symget symput sysget sysin sysleave sysmsg sysparm sysprint sysprintfont sysprod sysrc system t table tables tan tanh tapeclose tbufsize terminal test then time timepart tinv title title1 title2 title3 title4 title5 title6 title7 title8 title9 tnonct to today tol tooldef totper translate trantab tranwrd trigamma trim trimn trunc truncover type unformatted uniform union until upcase update user usericon uss validate value var varfmt varinfmt varlabel varlen varname varnum varray varrayx vartype verify vformat vformatd vformatdx vformatn vformatnx vformatw vformatwx vformatx vinarray vinarrayx vinformat vinformatd vinformatdx vinformatn vinformatnx vinformatw vinformatwx vinformatx vlabel vlabelx vlength vlengthx vname vnamex vnferr vtype vtypex weekday weight when where while wincharset window work workinit workterm write wsum x xsync xwait year yearcutoff yes yyq zipfips zipname zipnamel zipstate</Keywords>
+            <Keywords name="Keywords3">$1 $2 $3 $4 $5 $6 $7 $8 $9 $ascii $binary $cb $char $charzb $ebcdic $hex $kanji $kanjix $msgcase $octal $phex $quote $reverj $revers $upcase $varying %bquote %do %else %end %eval %global %goto %if %inc %include %index %input %length %let %list %local %macro %mend %nrbquote %nrquote %nrstr %put %qscan %qsysfunc %quote %run %substr %syscall %sysevalf %sysexec %sysfunc %sysrc %then %to %until %while %window best binary bits bz cb char comma commax dateampm ddmmyy dollar dollarx downame eurdfdd eurdfde eurdfdn eurdfdt eurdfdwn eurdfmn eurdfmy eurdfwdx eurdfwkx float fract hex hhmm ib ieee julday julian minguo mmddyy mmss mmyy monname monyy msec negparen nengo numx octal pd pdjulg pdjuli pdtime percent pib pk punch pvalue qtrr rb rmfdur rmfstamp roman row s370ff s370fib s370fibu s370fpd s370fpdu s370fpib s370frb s370fzd s370fzdl s370fzds s370fzdt s370fzdu smfstamp timeampm tod tu vaxrb weekdate weekdatx worddate worddatx wordf words yen yymm yymmdd yymon yyqr z zd zdb zdv</Keywords>
+            <Keywords name="Keywords4">yy yyyy obs1 obs2 obs3 obs4</Keywords>
+            <Keywords name="Keywords5">and between in or</Keywords>
+            <Keywords name="Keywords6"></Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters">00&quot; 01 02&quot; 03&apos; 04 05&apos; 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="Calibri" fontStyle="0" fontSize="12" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="8000FF" bgColor="FFFFFF" fontName="" fontStyle="2" fontSize="10" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="FFFFFF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="008080" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="13A92C" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="8080C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="FFFFFF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="Calibri" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="800080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="800080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
