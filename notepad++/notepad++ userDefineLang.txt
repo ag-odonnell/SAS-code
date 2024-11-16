@@ -1,5 +1,0 @@
-Per the instruction on this link (20210326): https://npp-user-manual.org/docs/user-defined-language-system/
-
-windows search: %AppData%\Notepad++\userDefineLangs
-Place the file (notice that userDefineLang does NOT show the .xml extension) in the following directory: 
-C:\Users\aaron.odonnell\AppData\Roaming\Notepad++\userDefineLang
