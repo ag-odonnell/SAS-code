@@ -1,0 +1,10 @@
+data test_01;
+	var_01 = " 'whÅtever^";
+	var_02 = strip(translate(var_01," ","'",' ','^',' ',byte(0)));
+	var_02 = translate(var_02,"a","Å");
+	var_03 = '"something~else';
+	var_04 = translate(var_03,' ','"');
+	var_04 = translate(var_04,' ','~');
+	var_05 = '"do~it^again~';
+	var_06 = translate(var_05,'','~',' ','"',' ','^');
+run;
