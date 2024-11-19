@@ -22,7 +22,7 @@ data aalib03.name_final_data;
         var_02 8.
         var_03 8.;
     set aalib02.name_temp_data;
-    if var_01~='ZZZZZ' then output;
+    if upcase(var_01)~='ZZZZZ' then output;
     Label
         var_01='var_01'
         var_02='var_02'
