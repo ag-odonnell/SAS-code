@@ -40,3 +40,4 @@ For more information about usage and options that are available for your interfa
 - [SAS/ACCESS for Relational Databases](https://documentation.sas.com/?cdcId=pgmsascdc&cdcVersion=9.4_3.4&docsetId=acreldb&docsetTarget=titlepage.htm)
 -	Blog posts
 -	SAS Communities
+-	[WARNING message about TRANSCODING](https://blogs.sas.com/content/sgf/2017/05/19/demystifying-and-resolving-common-transcoding-problems/)
