@@ -6,3 +6,9 @@ run;
 proc datasets library=work nolist;
   delete dataset_01-dataset_05;
 quit;
+
+/*This multi-file reference does NOT work*/
+/*proc delete data=
+    elgblty_&cyear._1_:
+    elgblty_&cyear._2_:;
+run;*/
