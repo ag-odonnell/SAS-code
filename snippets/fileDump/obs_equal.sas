@@ -1,4 +1,21 @@
 
+/*(0)*/
+%let obs_mode=max; /*run with all obs*/
+%let obs_mode=100; /*test with obs=100*/
+
+options obs=&obs_mode.;
+
+/*(00)*/
+%let query_limit=%str(inobs=10); /*test with obs=10*/
+%let query_limit=%str(inobs=max); /*run with all obs*/
+
+proc sql noprint &query_limit.;
+	select *
+ 	from
+  		_snowf.table_name
+    ;
+quit;
+
 %let yyyy=2020;
 
 /*#1)*/
