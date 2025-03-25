@@ -1,4 +1,31 @@
 
+%let cy=06;
+
+%let N_root=%str(&myfiles_root./OEDA_Prod/ODAP/DEV/aago/rbcs/N);
+%let YEAR_root=%str(Project/50915_CCW_BETOS/MA1/05 Option Years 2-5/01 BETOS/02 Contract Year &cy.);
+
+%let cypath=%str(&N_root./&YEAR_root.);
+%let output = &cypath./07 Final Updates;
+
+filename workdata "&output./p750_02_work_datasets_%sysfunc(date(),yymmdd10.).xlsx";
+%macro m01(ds=);
+    /* Export the SAS dataset to Excel */
+    proc export data=work.&ds.
+        outfile=workdata
+        dbms=xlsx
+        replace;
+        sheet="&ds.";
+    run;
+%mend m01;
+%m01(ds=merged_major);
+%m01(ds=merged);
+%m01(ds=merged_major_2);
+%m01(ds=qa_major);
+
+/*endProgram */
+
+/************************************************************************************;*/
+
 %let switch_run_m01 = 1;
 
 %macro macro_00;
