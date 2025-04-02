@@ -9,6 +9,7 @@ libname target "&myfiles_root/.../DEV/...";
 /*Note: data ; set ; copies dataset row by row */
 
 %macro result_same_name;
+    /*Note: proc copy WILL overwrite same name dataset in target*/
     proc copy in=source out=target;
         select
             dataset_01
@@ -33,6 +34,7 @@ libname target "&myfiles_root/.../DEV/...";
             ;
     run;
     /* Rename the copied dataset */
+    /*Note: proc datasets WILL NOT change name to name that exists in target*/
     proc datasets library=target nolist;
     change dataset_01 = new_dataset_01;
     quit;
