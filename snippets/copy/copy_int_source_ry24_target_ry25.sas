@@ -60,7 +60,7 @@
 		%m02(ds_ext_01=_p22_v10_cy, ds_ext_02=_cc);
 		%m02(ds_ext_01=_p23_v10_dy, ds_ext_02=_sn_as1);
 		%m02(ds_ext_01=_p23_v10_dy, ds_ext_02=_sn_as2);
-		%m02(ds_ext_01=_p24_v10_dy, ds_ext_02=_ir_as=);
+		%m02(ds_ext_01=_p24_v10_dy, ds_ext_02=_ir_as);
 	%end;
 %mend m00;
 %m00;
