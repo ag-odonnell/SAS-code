@@ -37,3 +37,11 @@
 options fmtsearch=(gvmisc24.formats) nofmterr;
 %findfmt(sex_v1f, F);  /* Check for a format named SEX_V1F */
 %findfmt(date9, I);    /* Check for SAS-supplied informat DATE9 */
+
+%let gvmisc24_deploy_root=%STR(&myfiles_root/OEDA_Deploy_Shared/GVMISC24/new);
+libname _deploy "&gvmisc24_deploy_root.";
+
+options fmtsearch=(_deploy.formats) nofmterr;
+%findfmt(sex_v1f, F);  /* Check for a format named SEX_V1F */
+
+/*endProgram*/
