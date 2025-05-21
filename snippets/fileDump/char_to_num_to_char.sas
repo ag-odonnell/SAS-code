@@ -1,6 +1,6 @@
 data test_01;
 	var_char='Q202402';
- 	num_var=input(substr(strip(var_char),6,2),2.);
+ 	var_num=input(substr(strip(var_char),6,2),2.);
 run;
 
 data test_01;
