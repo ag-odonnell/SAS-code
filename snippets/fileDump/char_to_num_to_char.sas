@@ -1,4 +1,9 @@
 data test_01;
+	var_char='Q202402';
+ 	num_var=input(substr(strip(var_char),6,2),2.);
+run;
+
+data test_01;
 	length var_01 8. var_02 $4;
 	format var_01 mmddyy8.;
 	var_01 = mdy(2,10,1927);
