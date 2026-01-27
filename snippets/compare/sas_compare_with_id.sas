@@ -1,29 +1,29 @@
+
 %let start_year=2024;
 %let end_year=2024;
 
-%let def_libref_01=/deployment/path/new/;
-%let def_libref_03=/validation/path/;
+%let def_source_path=%str(/deployment/path/new/);
+%let def_target_path=%str(/validation/path/);
 
-libname aalib01 "&def_libref_01.";
-libname aalib03 "&def_libref_03.";
+libname _source "&def_source_path.";
+libname _target "&def_target_path.";
 
-%macro macro_00;
-    %macro macro_01;
+%macro m00;
+    %macro m01;
         %do CYEAR=&start_year. %to &end_year.;
-            proc sort data=aalib01.production_data_20241023;
+            proc sort data=_source.production_data_20241023;
                 by var_01 var_02 var_03;
             run;
 
             proc compare 
-                base=aalib01.production_data_20241023
-                compare=aalib03.validation_data_20241023
+                base=_source.production_data_20241023
+                compare=_target.validation_data_20241023
                 maxprint=(10,25000)
                 listall;
                 *id var_01 var_02 var_03;
             run;
         %end;
-    %mend macro_01;
-    %macro_01;
-%mend macro_00;
-
-%macro_00;
+    %mend m01;
+    %m01;
+%mend m00;
+%m00;
